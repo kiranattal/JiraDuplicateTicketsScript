@@ -148,3 +148,4 @@ def create_ticket(ticket, epic_map):
 epic_map = create_epics()
 for ticket in tickets:
     create_ticket(ticket, epic_map)
+    print("Added base ticket successfully")

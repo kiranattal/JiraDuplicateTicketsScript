@@ -97,7 +97,9 @@ for epic in epics:
 
     if response.status_code == 201:
         issue_key = response.json().get("key")
-        print(f"✅ Created Epic: {issue_key} - {epic['name']}")
+        print(f"Created Epic: {issue_key} - {epic['name']}")
+        print("Added Epic successfully")
+
     else:
         print(f"❌ Failed to create Epic: {epic['name']}")
         print(f"Status: {response.status_code}, Response: {response.text}")

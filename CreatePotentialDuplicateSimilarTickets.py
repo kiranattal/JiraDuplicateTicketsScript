@@ -56,4 +56,6 @@ def create_ticket(ticket):
 for ticket in tickets:
     #print(ticket["summary"])
     create_ticket(ticket)
+    print("Added duplicate ticket successfully")
+
 
